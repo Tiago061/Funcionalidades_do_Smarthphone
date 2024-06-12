@@ -91,17 +91,27 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     @Override
     public void exibirPagina(String url) {
-
-
+        if(url == site){
+            System.out.println(site);
+        }else{
+            System.err.println("Acesse um site válido.");
+        }
     }
+
 
     @Override
     public void adicionarNovaAba() {
+        String novaAba = site;
+        if(novaAba != null){
+            System.out.println("Nova aba adicionada");
 
+        }
     }
 
     @Override
     public void atualizarPagina() {
+        System.out.println("Página atualizada...");
+
 
     }
 }
